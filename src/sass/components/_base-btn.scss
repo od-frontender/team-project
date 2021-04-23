@@ -1,0 +1,37 @@
+.base-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 160px;
+  background-color: #fff;
+  color: $color-accent;
+  cursor: pointer;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.3;
+  border: none;
+  border-radius: 22px;
+  padding-bottom: 11px;
+  padding-top: 11px;
+ 
+  &:hover,
+  &:focus {
+    background-color: #E5E5E5;
+  }
+}
+@media screen and (max-width: 767px) {
+  .base-btn {
+    display: none;
+  }
+  .base-btn.mobile-menu__base-btn {
+      display: flex;
+      margin: 0 auto;
+      min-width: 209px;
+      margin-bottom: 19px;
+  }
+}
+.base-btn__icon {
+    margin-left: 12px;
+    width: 7px;
+    height: 10px;
+}
