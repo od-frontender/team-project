@@ -20,7 +20,7 @@
     // url("./../images/mobile/ellipse.png");
     // background-repeat: no-repeat;
     // background-position: bottom right 30%;
-    // background-image: url("./../images/mobile/ellipse.png");
+    // background-image: url("./../images/desktop/home-pic1.png");
     // background-repeat: no-repeat;
     // background-position: 45px 70px;
   
@@ -99,6 +99,11 @@
     display: none;
   }
 }
+
+.hero-title__wrapper {
+  display: flex;
+  justify-content: space-between;
+}
 .hero-title {
   font-family: $second-font;
   margin-bottom: 19px;
@@ -118,6 +123,21 @@
   line-height: 0.95;
   text-transform: uppercase;
   color: $color-accent
+}
+@media screen and (max-width: 767px) {
+  .title-number {
+    display: none;
+  }
+}
+
+.title-number__point {
+  font-family: $second-font;
+  font-size: 28px;
+  line-height: 1.14;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+
+  color: $color-accent;
 }
 .hero__list {
   display: flex;
