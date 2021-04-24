@@ -23,12 +23,19 @@
   .base-btn {
     display: none;
   }
+  
+}
+.base-btn.mobile-menu__base-btn {
+  display: flex;
+  margin: 0 auto;
+  min-width: 209px;
+  margin-bottom: 19px;
+}
+@media screen and (min-width: 768px) {
   .base-btn.mobile-menu__base-btn {
-      display: flex;
-      margin: 0 auto;
-      min-width: 209px;
-      margin-bottom: 19px;
+    min-width: 186px;
   }
+
 }
 .base-btn__icon {
     margin-left: 12px;
