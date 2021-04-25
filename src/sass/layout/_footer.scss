@@ -43,6 +43,8 @@
 }
 
 .contacts-wrapper__icon {
+    width: 32px;
+    height: 32px;
     fill: $suptitle-color;
 
     .contacts-wrapper__link:hover &,
@@ -92,6 +94,10 @@
 
 @media screen and (min-width: 768px) {
 
+    .footer {
+        padding-top: 82px;
+    }
+
     .title-wrapper__suptitle {
         width: 340px;
         padding-right: 0px;
@@ -117,6 +123,19 @@
         margin-bottom: 91px;
     }
 
+    .contacts-wrapper__icon {
+        width: 34px;
+        height: 34px;
+    }
+
+    .footer-tel__text {
+        font-size: 14px;
+    }
+
+    .footer-tel__link {
+        font-size: 14px;
+    }
+
     .copyright {
         padding-left: 246px;
         padding-right: 250px;
@@ -126,6 +145,8 @@
 
     .copyright__text {
         text-align: center;
+        line-height: 1.8;
+        letter-spacing: 0.02em;
     }
 }
 
@@ -146,6 +167,16 @@
 
     .contacts-wrapper__list {
         margin-bottom: 50px;
+    }
+
+    .footer-tel__text {
+        font-size: 16px;
+        letter-spacing: 0.02em;
+    }
+
+    .footer-tel__link {
+        font-size: 16px;
+        letter-spacing: 0.02em;
     }
 
     .copyright {
