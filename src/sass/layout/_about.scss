@@ -14,10 +14,6 @@
   }
 }
 
-.about__list {
-  margin-top: 46px;
-}
-
 .about__btn {
   display: flex;
   align-items: center;
@@ -36,13 +32,8 @@
   margin-top: 17px;
 }
 
-<<<<<<< Updated upstream
 .about__btn:hover,
 .about__btn :focus {
-=======
-.about__btn:focus,
-.about__btn:hover {
->>>>>>> Stashed changes
   background-color: #ecebeb;
 }
 
@@ -52,6 +43,7 @@
   font-weight: 500;
   font-size: 12px;
   line-height: 19px;
+  margin-top: 47px;
 }
 
 .about__list > .about__discription {
@@ -63,8 +55,11 @@
 }
 
 .about__item:last-child {
-  margin-top: 47px;
   color: #907e82;
+}
+
+.milk-img {
+  position: absolute;
 }
 
 @media screen and (min-width: 768px) {
@@ -88,13 +83,6 @@
 }
 
 @media screen and (min-width: 1280px) {
-  .about__content {
-    width: 1280px;
-    height: 534px;
-    background-repeat: no-repeat;
-    background: url('./../images/desktop/sectionbg1.png');
-  }
-
   .about__list {
     width: 463px;
     margin-left: 74px;
