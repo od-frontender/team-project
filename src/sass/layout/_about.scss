@@ -14,13 +14,6 @@
   }
 }
 
-.about__img {
-  width: 280px;
-  height: 280px;
-  background: url('./../images/mobile/home-pic4-mob.png');
-  background-repeat: no-repeat;
-}
-
 .about__list {
   margin-top: 46px;
 }
@@ -41,6 +34,16 @@
   padding-bottom: 11px;
   padding-top: 11px;
   margin-top: 17px;
+}
+
+<<<<<<< Updated upstream
+.about__btn:hover,
+.about__btn :focus {
+=======
+.about__btn:focus,
+.about__btn:hover {
+>>>>>>> Stashed changes
+  background-color: #ecebeb;
 }
 
 .about__discription {
@@ -74,18 +77,6 @@
     margin-left: 17px;
   }
 
-  // .about__text {
-  //   margin-top: 100px;
-  // }
-
-  .about__img {
-    display: flex;
-    width: 340px;
-    height: 340px;
-    background: url('./../images/tablet/home-pic4-tab.png');
-    background-repeat: no-repeat;
-  }
-
   .about__list {
     width: 340px;
     margin-left: 17px;
@@ -97,14 +88,6 @@
 }
 
 @media screen and (min-width: 1280px) {
-  .about__img {
-    display: flex;
-    width: 516px;
-    height: 516px;
-    background-repeat: no-repeat;
-    background: url('./../images/desktop/home-pic4.png');
-  }
-
   .about__content {
     width: 1280px;
     height: 534px;
