@@ -1,0 +1,51 @@
+.reviews {
+  &__img {
+    margin: 0 auto;
+
+    width: 85px;
+    height: 85px;
+  }
+
+  &__text-wrapper {
+    padding-right: 66px;
+    padding-left: 57px;
+    padding-top: 43px;
+    padding-bottom: 26px;
+
+    position: relative;
+    margin-top: 29px;
+    background-color: $reviews-bg-color;
+
+    z-index: 1;
+
+    &::before {
+      position: absolute;
+      content: '';
+      display: inline-block;
+      background-image: url('../images/reviews-brackets.png');
+      width: 54px;
+      height: 40px;
+
+      top: 28px;
+      left: 61px;
+
+      z-index: -1;
+    }
+  }
+
+  &__text {
+    text-align: center;
+    font-size: 12px;
+    line-height: 2.58;
+    font-weight: 500;
+
+    z-index: 1;
+
+    background-image: repeating-linear-gradient(
+      rgba(100%, 100%, 100%, 0%) 0px,
+      rgba(100%, 100%, 100%, 0%) 29px,
+      #e1e1e1 29px,
+      #e1e1e1 30px
+    );
+  }
+}
