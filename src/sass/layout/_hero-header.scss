@@ -1,19 +1,5 @@
 .hero-header {
     background-color: #FFB8CA;
-    padding-top: 6px;
-    padding-bottom: 160px;
-
-}
-@media screen and (min-width: 768px) {
-  .hero-header {
-    padding-top: 37px;
-    padding-bottom: 34px;
-  }
-}
-@media screen and (min-width: 1280px) {
-  .hero-header {
-    padding-bottom: 56px;
-  }
 }
 .hero-header__wrapper {
   position: relative;
@@ -23,16 +9,18 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-bottom: 137px;
+    padding-bottom: 68px;
+    padding-top: 6px;
 }
 @media screen and (min-width: 768px) {
   .header {
-    margin-bottom: 15px;
+    padding-top: 37px;
+    padding-bottom: 7.5px;
   }
 }
 @media screen and (min-width: 1280px) {
   .header {
-    margin-bottom: 84px;
+    padding-bottom: 42px;
   }
 }
 @media screen and (min-width: 1280px) {
@@ -67,14 +55,12 @@
       color: $color-accent;
     }
   }
-
 }
 @media screen and (min-width: 1280px) {
   .navigation {
     display: flex;
   }
 }
-
 .burger-btn,
 .close-btn {
     display: inline-block;
@@ -99,7 +85,23 @@
     display: none;
   }
 }
+.hero {
+  padding-top: 68px;
+  padding-bottom: 160px;
+}
+@media screen and (min-width: 768px) {
+  .hero {
+    padding-top: 7.5px;
+    padding-bottom: 34px;
+  }
+}
 
+@media screen and (min-width: 1280px) {
+  .hero {
+    padding-top: 42px;
+    padding-bottom: 56px;
+  }
+}
 .hero-title__wrapper {
   display: flex;
   justify-content: space-between;
@@ -315,25 +317,19 @@
 .hero-image {
   position: absolute;
   right: 0;
-  bottom: -56px;
+  bottom: 0;
   width: 168px;
   height: 133px;
-}
-@media screen and (min-width: 768px) {
-  .hero-image {
-    bottom: -34px;
-  }
 }
 @media screen and (min-width: 1280px) {
   .hero-image {
     width: 293px;
     height: 232px;
-    bottom: -56px;
   }
 }
 .hero-image2 {
   position: absolute;
-  bottom: -6px;
+  bottom: 28px;
   width: 124px;
   height: 126px;
 }
@@ -342,14 +338,14 @@
     left: -38px;
     width: 188px;
     height: 191px;
-    bottom: -11px;
+    bottom: 45px;
   }
 }
 .hero-image3 {
   position: absolute;
   width: 171px;
   height: 410px;
-  bottom: -160px;
+  bottom: 0;
   right: 12px;
   z-index: -1;
 }
@@ -357,7 +353,6 @@
   .hero-image3 {
     width: 143px;
     height: 336px;
-    bottom: -34px;
     right: 213px;
   }
 }
@@ -365,7 +360,6 @@
   .hero-image3 {
     width: 236px;
     height: 557px;
-    bottom: -56px;
     right: 335px;
   }
 }
