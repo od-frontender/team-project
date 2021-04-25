@@ -295,7 +295,7 @@
   }
 }
 .description-block__link {
-  display: block;
+  display: flex;
   width: 18px;
   height: 18px;
   border-radius: 50%;
@@ -305,6 +305,20 @@
   .description-block__link {
     width: 26px;
     height: 26px;
+  }
+}
+.description-block__icon {
+  display: block;
+  width: 7px;
+  height: 7px;
+  fill: #d41443;
+  margin: auto;
+}
+@media screen and (min-width: 1280px) {
+  .description-block__icon {
+    width: 10px;
+    height: 10px;
+    
   }
 }
 @media screen and (max-width: 767px) {
