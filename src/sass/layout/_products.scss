@@ -12,7 +12,22 @@
   }
 }
 
+.products__list {
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: calc(-1 * 20px);
+    margin-top: calc(-1 * 20px);
+  }
+
+  @media screen and (min-width: 1280px) {
+    margin-left: calc(-1 * 28px);
+    margin-top: calc(-1 * 28px);
+  }
+}
+
 .products__item {
+  position: relative;
   padding: 160px 40px 40px;
   border-radius: 24px;
 
@@ -30,36 +45,156 @@
 
   @media screen and (max-width: 767px) {
     margin-top: 130px;
-  }
-}
-
-@media screen and (min-width: 768px) {
-  .products__list {
-    display: flex;
-    flex-wrap: wrap;
-    margin-left: calc(-1 * 20px);
-    margin-top: calc(-1 * 20px);
+    max-width: 280px;
   }
 
-  .products__item {
-    margin-left: 20px;
+  @media screen and (min-width: 768px) {
     margin-top: 150px;
-    padding: 152px 40px 40px;
+    margin-left: 20px;
+    padding: 152px 12px 40px;
     flex-basis: calc(100% / 3 - 20px);
   }
-}
 
-@media screen and (min-width: 1280px) {
-  .products__list {
-    margin-left: calc(-1 * 28px);
-    margin-top: calc(-1 * 28px);
-  }
-
-  .products__item {
-    margin-left: 28px;
+  @media screen and (min-width: 1280px) {
     margin-top: 260px;
+    margin-left: 28px;
     padding: 162px 44px 54px;
     flex-basis: calc(100% / 3 - 28px);
+  }
+}
+
+.products__title_ice-cream,
+.products__title_ice-coffee,
+.products__title_milkshakes {
+  &::before {
+    content: '';
+    width: 250px;
+    height: 252px;
+    position: absolute;
+    top: -23%;
+    left: 50%;
+    transform: translateX(-50%);
+
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+    @media screen and (min-width: 768px) {
+      width: 220px;
+      height: 234px;
+      top: -20%;
+    }
+
+    @media screen and (min-width: 1280px) {
+      width: 330px;
+      height: 335px;
+      top: -37%;
+    }
+  }
+}
+
+.products__title_ice-cream {
+  &::before {
+    background-image: url('../images/mobile/home-pic1-mob.png');
+
+    @media screen and (min-device-pixel-ratio: 2),
+      (-webkit-min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url('../images/mobile/home-pic1-mob@2x.png');
+    }
+
+    @media screen and (min-width: 768px) {
+      background-image: url('../images/tablet/home-pic1-tab.png');
+
+      @media screen and (min-device-pixel-ratio: 2),
+        (-webkit-min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+        background-image: url('../images/tablet/home-pic1-tab@2x.png');
+      }
+    }
+
+    @media screen and (min-width: 1280px) {
+      background-image: url('../images/desktop/home-pic1.png');
+
+      @media screen and (min-device-pixel-ratio: 2),
+        (-webkit-min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+        background-image: url('../images/desktop/home-pic1@2x.png');
+      }
+    }
+  }
+}
+
+.products__title_ice-coffee {
+  &::before {
+    background-image: url('../images/mobile/home-pic2-mob.png');
+
+    @media screen and (min-device-pixel-ratio: 2),
+      (-webkit-min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url('../images/mobile/home-pic2-mob@2x.png');
+    }
+
+    @media screen and (min-width: 768px) {
+      background-image: url('../images/tablet/home-pic2-tab.png');
+
+      @media screen and (min-device-pixel-ratio: 2),
+        (-webkit-min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+        background-image: url('../images/tablet/home-pic2-tab@2x.png');
+      }
+    }
+
+    @media screen and (min-width: 1280px) {
+      background-image: url('../images/desktop/home-pic2.png');
+
+      @media screen and (min-device-pixel-ratio: 2),
+        (-webkit-min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+        background-image: url('../images/desktop/home-pic2@2x.png');
+      }
+    }
+  }
+}
+
+.products__title_milkshakes {
+  &::before {
+    background-image: url('../images/mobile/home-pic3-mob.png');
+
+    @media screen and (min-device-pixel-ratio: 2),
+      (-webkit-min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url('../images/mobile/home-pic3-mob@2x.png');
+    }
+
+    @media screen and (min-width: 768px) {
+      background-image: url('../images/tablet/home-pic3-tab.png');
+
+      @media screen and (min-device-pixel-ratio: 2),
+        (-webkit-min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+        background-image: url('../images/tablet/home-pic3-tab@2x.png');
+      }
+    }
+
+    @media screen and (min-width: 1280px) {
+      background-image: url('../images/desktop/home-pic3.png');
+
+      @media screen and (min-device-pixel-ratio: 2),
+        (-webkit-min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+        background-image: url('../images/desktop/home-pic3@2x.png');
+      }
+    }
   }
 }
 
@@ -73,10 +208,8 @@
   text-transform: uppercase;
 
   color: $text-color-1;
-}
 
-@media screen and (min-width: 1280px) {
-  .products__title {
+  @media screen and (min-width: 1280px) {
     font-size: 30px;
     line-height: 1.13;
   }
@@ -91,27 +224,26 @@
   letter-spacing: 0.04em;
 
   color: $text-color-1;
-}
 
-.products__description::before {
-  content: '\22EF';
-  display: block;
-  margin-top: 30px;
-  margin-bottom: 30px;
+  &::before {
+    content: '';
+    display: block;
+    width: 26px;
+    height: 6px;
+    margin: 30px auto;
 
-  line-height: 6px;
-}
+    background-image: url('../images/desktop/dots.png');
+    background-repeat: no-repeat;
+    background-position: center;
+  }
 
-@media screen and (min-width: 768px) {
-  .products__description {
+  @media screen and (min-width: 768px) {
     margin-bottom: 40px;
 
     line-height: 1.76;
   }
-}
 
-@media screen and (min-width: 1280px) {
-  .products__description {
+  @media screen and (min-width: 1280px) {
     margin-bottom: 62px;
 
     font-size: 16px;
