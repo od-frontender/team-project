@@ -1,6 +1,7 @@
 body {
-    font-family: $main-font;
+  font-family: $main-font;
 }
+
 h1,
 h2,
 h3,
@@ -8,30 +9,36 @@ h4,
 h5,
 h6,
 p {
-    margin: 0;
+  margin: 0;
+}
+
+li {
+  list-style: none;
 }
 
 ul,
-ol {
-    margin: 0;
-    padding: 0;
+ol,
+li,
+a {
+  margin: 0;
+  padding: 0;
 }
 
 img {
-    display: block;
-    width: 100%;
+  display: block;
+  width: 100%;
 }
 
 .link {
-    text-decoration: none;
+  text-decoration: none;
 }
 
 .list {
-    list-style-type: none;
+  list-style-type: none;
 }
 
 .address {
-    font-style: normal;
+  font-style: normal;
 }
 .mobile-menu.is-open {
   opacity: 1;

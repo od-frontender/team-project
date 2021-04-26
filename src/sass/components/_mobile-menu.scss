@@ -8,6 +8,7 @@
     visibility: hidden;
     pointer-events: none;
     padding-top: 60px;
+    z-index: 999;
     transition: opacity 250ms linear;
 }
 @media screen and (max-width: 767px) {
