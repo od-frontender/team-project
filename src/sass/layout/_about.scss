@@ -56,8 +56,12 @@
   color: #907e82;
 }
 
-.milk-img {
-  position: absolute;
+.about .container {
+  background-position-y: 588px;
+  background-position-x: center;
+  background-repeat: no-repeat;
+  background-image: url(./../images/desktop/sectionbg1.png);
+  background-size: 100%;
 }
 
 @media screen and (min-width: 768px) {
@@ -89,5 +93,9 @@
   .about__btn {
     margin-left: 74px;
     margin-top: 45px;
+  }
+
+  .about .container {
+    background-position-y: 90px;
   }
 }
