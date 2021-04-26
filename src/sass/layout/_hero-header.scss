@@ -1,5 +1,6 @@
 .hero-header {
     background-color: #FFB8CA;
+    overflow: hidden;
 }
 .hero-header__wrapper {
   position: relative;
@@ -377,3 +378,32 @@
     right: 335px;
   }
 }
+.hero-ellipse {
+  position: absolute;
+  z-index: -2;
+  width: 346px;
+  height: 344px;
+  bottom: 75px;
+}
+@media screen and (min-width: 400px) {
+  .hero-ellipse {
+    right: 0;
+  }
+}
+@media screen and (min-width: 768px) {
+  .hero-ellipse {
+    width: 324px;
+    height: 322px;
+    bottom: 46px;
+    right: 103px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .hero-ellipse {
+    width: 538px;
+    height: 538px;
+    bottom: 75px;
+    right: 152px;
+  }
+}
+
