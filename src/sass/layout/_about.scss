@@ -1,5 +1,5 @@
 .about {
-  background: #fff5f6;
+  background: $second-bg-color;
   padding-top: 125px;
   padding-bottom: 145px;
 
@@ -19,8 +19,8 @@
   align-items: center;
   justify-content: center;
   min-width: 176px;
-  background-color: #fff;
-  color: #d41443;
+  background-color: $text-color-1;
+  color: $color-accent;
   cursor: pointer;
   font-weight: 700;
   font-size: 16px;
@@ -29,11 +29,14 @@
   border-radius: 22px;
   padding-bottom: 11px;
   padding-top: 11px;
-  margin-top: 17px;
-}
-.about__btn:hover,
-.about__btn:focus {
-  background-color: #ecebeb;
+  margin-top: 20px;
+  margin-left: 30px;
+  transition: background-color 250ms $timing-function;
+
+  &:hover,
+  &:focus {
+    background-color: #ecebeb;
+  }
 }
 .about__discription {
   font-family: DM Sans;
@@ -41,19 +44,28 @@
   font-weight: 500;
   font-size: 12px;
   line-height: 19px;
-  margin-top: 47px;
-}
-
-.about__list > .about__discription {
-  color: black;
 }
 
 .about__list {
-  justify-content: center;
+  padding-left: 30px;
+  padding-right: 30px;
+
+  & > .about__discription {
+    color: $text-color-3;
+  }
+}
+
+.about__item:first-child {
+  margin-top: 46px;
+  margin-bottom: 30px;
+}
+
+.about__item:not(:first-child) {
+  color: $text-color-2;
 }
 
 .about__item:last-child {
-  color: #907e82;
+  margin-top: 15px;
 }
 
 .about {
@@ -62,6 +74,10 @@
   background-repeat: no-repeat;
   background-image: url(./../images/desktop/sectionbg1.png);
   background-size: 100%;
+
+  & .title {
+    margin-bottom: 26px;
+  }
 }
 
 @media screen and (min-width: 768px) {
@@ -70,17 +86,33 @@
   }
 
   .about__discription {
-    width: 340px;
     margin-left: 17px;
+    font-size: 14px;
+    line-height: 25px;
   }
 
   .about__list {
     width: 340px;
-    margin-left: 17px;
+    padding-right: 0;
+    padding-left: 0;
   }
 
+  .about__item:first-child {
+    margin-top: 100px;
+    margin-bottom: 30px;
+  }
   .about__btn {
-    margin-left: 17px;
+    margin-top: 62px;
+  }
+
+  .about {
+    background-position-y: 100000000px;
+  }
+  .about .title {
+    margin-bottom: 0px;
+  }
+  .about__img {
+    margin-top: 50px;
   }
 }
 
@@ -97,5 +129,11 @@
 
   .about {
     background-position-y: 359px;
+  }
+
+  .about__discription {
+    font-size: 16px;
+    line-height: 28px;
+    margin-left: 0;
   }
 }
