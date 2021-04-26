@@ -75,6 +75,66 @@
     }
 }
 
+.contacts__location {
+    position: relative;
+    margin-bottom: 50px;
+
+    &::after {
+        content: '';
+        top: 120px;
+        left: 0;
+        position: absolute;
+        display: block;
+        height: 1px;
+        width: 100%;
+        background-color: #e1e1e1;
+    }
+}
+
+.contacts__city {
+    font-family: $main-font;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 1.83;
+    letter-spacing: 0.04em;
+    color: $text-color-3;
+    margin-bottom: 10px;
+}
+@media screen and (min-width: 768px) {
+    .contacts__city {
+        font-size: 14px;
+        line-height: 1.86;
+    }
+}
+@media screen and (min-width: 1280px) {
+    .contacts__city {
+        font-size: 16px;
+    }
+}
+
+.contacts__text {
+    font-family: $main-font;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 1.5;
+    color: $text-color-2;
+}
+@media screen and (min-width: 768px) {
+    .contacts__text {
+        font-size: 14px;
+        line-height: 1.64;
+    }
+}
+@media screen and (min-width: 1280px) {
+    .contacts__text {
+        font-size: 16px;
+        line-height: 1.81;
+    }
+}
+
+
+
+
 
 .contacts__button--color {
     background-color: $fourth-bg-color;
