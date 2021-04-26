@@ -46,6 +46,7 @@
     width: 32px;
     height: 32px;
     fill: $suptitle-color;
+    transition: fill 250ms $timing-function;
 
     .contacts-wrapper__link:hover &,
     .contacts-wrapper__link:focus & {
