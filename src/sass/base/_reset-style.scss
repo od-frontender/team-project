@@ -40,4 +40,8 @@ img {
 .address {
   font-style: normal;
 }
-
+.element-invisible {
+  height: 0;
+  overflow: hidden;
+  position: absolute;
+}
