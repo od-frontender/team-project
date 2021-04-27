@@ -1,77 +1,110 @@
-<section class="hero-header">
+<section class="header">
   <div class="container">
-    <div class="hero-header__wrapper">
-      <div class="header">
-        <a class="logo link" href="">
-          <img
-            class="logo__image"
-            srcset="./images/desktop/logo.png 1x, ./images/desktop/logo@2x.png 2x"
-            src="./images/desktop/logo.png"
-            alt="logo"
-          />
-        </a>
-        <ul class="navigation">
-          <li class="navigation__item list"><a class="navigation__link link" href="">Home</a></li>
-          <li class="navigation__item list">
-            <a class="navigation__link link" href="#gallery">About us</a>
-          </li>
-          <li class="navigation__item list">
-            <a class="navigation__link link" href="#about">How it’s made?</a>
-          </li>
-          <li class="navigation__item list">
-            <a class="navigation__link link" href="#products">Our products</a>
-          </li>
-          <li class="navigation__item list">
-            <a class="navigation__link link" href="#contacts">Contact</a>
-          </li>
-        </ul>
-        <button class="burger-btn" type="button" data-menu-button>
-          <svg class="burger-btn__icon">
-            <use href="./images/sprite.svg#icon-Burger"></use>
-          </svg>
-        </button>
-        <button class="base-btn">
-          Buy now
-          <svg class="base-btn__icon">
-            <use href="./images/sprite.svg#icon-Vector1"></use>
-          </svg>
-        </button>
-      </div>
-      <div class="hero">
-        <div class="hero-title__wrapper">
-          <h1 class="hero-title">
-            <span class="hero-title__first-part">ice cream made with</span>
-            <span class="hero-title__second-part">passion</span>
-          </h1>
-          <div class="title-number">
-            <p class="title-number__block">
-              <span class="title-number__point">16</span>
-              <span class="title-number__description">cafes</span>
-            </p>
-            <p class="title-number__block title-number__block--mb0">
-              <span class="title-number__point">23</span>
-              <span class="title-number__description">food trucks</span>
-            </p>
-          </div>
-        </div>
-        <ul class="hero__list list">
-          <li class="hero__item"><a class="hero__link link">Products</a></li>
-          <li class="hero__item">
-            <a class="hero__link link hero__link--white-theme">How it’s made?</a>
-          </li>
-        </ul>
-        <div class="description-block">
-          <p class="description-block__subtext">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-            incididunt ut labore et
+    <div class="mobile-menu" data-menu>
+      <button class="close-btn" data-menu-close>
+        <svg class="close-btn__icon">
+          <use href="./images/sprite.svg#icon-close"></use>
+        </svg>
+      </button>
+      <button class="base-btn mobile-menu__base-btn" type="button">
+        Buy now
+        <svg class="base-btn__icon">
+          <use href="./images/sprite.svg#icon-Vector1"></use>
+        </svg>
+      </button>
+      <ul class="mobile-navigation">
+        <li class="mobile-navigation__item list">
+          <a class="mobile-navigation__link link" href="">Home</a>
+        </li>
+        <li class="mobile-navigation__item list">
+          <a class="mobile-navigation__link link" href="#gallery">About us</a>
+        </li>
+        <li class="mobile-navigation__item list">
+          <a class="mobile-navigation__link link" href="#about">How it’s made?</a>
+        </li>
+        <li class="mobile-navigation__item list">
+          <a class="mobile-navigation__link link" href="#products">Our products</a>
+        </li>
+        <li class="mobile-navigation__item list">
+          <a class="mobile-navigation__link link" href="#contacts">Contact</a>
+        </li>
+      </ul>
+    </div>
+    <div class="header__wrapper">
+      <a class="logo link" href="">
+        <img
+          class="logo__image"
+          srcset="./images/desktop/logo.png 1x, ./images/desktop/logo@2x.png 2x"
+          src="./images/desktop/logo.png"
+          alt="logo"
+        />
+      </a>
+      <ul class="navigation">
+        <li class="navigation__item list"><a class="navigation__link link" href="">Home</a></li>
+        <li class="navigation__item list">
+          <a class="navigation__link link" href="#gallery">About us</a>
+        </li>
+        <li class="navigation__item list">
+          <a class="navigation__link link" href="#about">How it’s made?</a>
+        </li>
+        <li class="navigation__item list">
+          <a class="navigation__link link" href="#products">Our products</a>
+        </li>
+        <li class="navigation__item list">
+          <a class="navigation__link link" href="#contacts">Contact</a>
+        </li>
+      </ul>
+      <button class="burger-btn" type="button" data-menu-button>
+        <svg class="burger-btn__icon">
+          <use href="./images/sprite.svg#icon-Burger"></use>
+        </svg>
+      </button>
+      <button class="base-btn">
+        Buy now
+        <svg class="base-btn__icon">
+          <use href="./images/sprite.svg#icon-Vector1"></use>
+        </svg>
+      </button>
+    </div>
+  </div>
+</section>
+<section class="hero">
+  <div class="container">
+    <div class="hero__wrapper">
+      <div class="hero-title__wrapper">
+        <h1 class="hero-title">
+          <span class="hero-title__first-part">ice cream made with</span>
+          <span class="hero-title__second-part">passion</span>
+        </h1>
+        <div class="title-number">
+          <p class="title-number__block">
+            <span class="title-number__point">16</span>
+            <span class="title-number__description">cafes</span>
           </p>
-          <a class="description-block__link link" href="">
-            <svg class="description-block__icon">
-              <use href="./images/sprite.svg#icon-arrow-right"></use>
-            </svg>
-          </a>
+          <p class="title-number__block title-number__block--mb0">
+            <span class="title-number__point">23</span>
+            <span class="title-number__description">food trucks</span>
+          </p>
         </div>
       </div>
+      <ul class="hero__list list">
+        <li class="hero__item"><a class="hero__link link">Products</a></li>
+        <li class="hero__item">
+          <a class="hero__link link hero__link--white-theme">How it’s made?</a>
+        </li>
+      </ul>
+      <div class="description-block">
+        <p class="description-block__subtext">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+          ut labore et
+        </p>
+        <a class="description-block__link link" href="">
+          <svg class="description-block__icon">
+            <use href="./images/sprite.svg#icon-arrow-right"></use>
+          </svg>
+        </a>
+      </div>
+
       <picture>
         <source
           srcset="./images/desktop/slider-pic4.png 1x, ./images/desktop/slider-pic4@2x.png 2x"
@@ -111,35 +144,5 @@
       </picture>
       <img class="hero-ellipse" src="./images/mobile/ellipse.png" alt="ellipse" />
     </div>
-  </div>
-  <div class="mobile-menu" data-menu>
-    <button class="close-btn" data-menu-close>
-      <svg class="close-btn__icon">
-        <use href="./images/sprite.svg#icon-close"></use>
-      </svg>
-    </button>
-    <button class="base-btn mobile-menu__base-btn" type="button">
-      Buy now
-      <svg class="base-btn__icon">
-        <use href="./images/sprite.svg#icon-Vector1"></use>
-      </svg>
-    </button>
-    <ul class="mobile-navigation">
-      <li class="mobile-navigation__item list">
-        <a class="mobile-navigation__link link" href="">Home</a>
-      </li>
-      <li class="mobile-navigation__item list">
-        <a class="mobile-navigation__link link" href="#gallery">About us</a>
-      </li>
-      <li class="mobile-navigation__item list">
-        <a class="mobile-navigation__link link" href="#about">How it’s made?</a>
-      </li>
-      <li class="mobile-navigation__item list">
-        <a class="mobile-navigation__link link" href="#products">Our products</a>
-      </li>
-      <li class="mobile-navigation__item list">
-        <a class="mobile-navigation__link link" href="#contacts">Contact</a>
-      </li>
-    </ul>
   </div>
 </section>
