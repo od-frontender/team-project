@@ -1,7 +1,7 @@
 .about {
   background: $second-bg-color;
   padding-top: 125px;
-  padding-bottom: 145px;
+  padding-bottom: 20px;
 
   @media screen and (min-width: 768px) {
     padding-top: 130px;
@@ -45,10 +45,23 @@
   font-size: 12px;
   line-height: 19px;
 }
-
+@media screen and (max-width: 767px) {
+  .about__text {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .about__text {
+    margin-left: 17px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .about__text {
+    margin-left: 74px;
+  }
+}
 .about__list {
-  padding-left: 30px;
-  padding-right: 30px;
 
   & > .about__discription {
     color: $text-color-3;
@@ -86,7 +99,6 @@
   }
 
   .about__discription {
-    margin-left: 17px;
     font-size: 14px;
     line-height: 25px;
   }
@@ -98,39 +110,36 @@
   }
 
   .about__item:first-child {
-    margin-top: 100px;
     margin-bottom: 30px;
   }
   .about__btn {
     margin-top: 62px;
+    margin-left: 0;
   }
 
   .about {
     background-position-y: 100000000px;
   }
   .about .title {
-    margin-bottom: 0px;
-  }
-  .about__img {
-    margin-top: 50px;
+    margin-bottom: 50px;
   }
 }
 
 @media screen and (min-width: 1280px) {
   .about__list {
     width: 463px;
-    margin-left: 74px;
   }
 
   .about__btn {
-    margin-left: 74px;
     margin-top: 45px;
   }
 
   .about {
     background-position-y: 359px;
   }
-
+  .about .title {
+    margin-bottom: 55px;
+  }
   .about__discription {
     font-size: 16px;
     line-height: 28px;

@@ -1,7 +1,23 @@
 .footer {
     padding-top: 57px;
+    padding-bottom: 25px;
     background-color:$second-bg-color;
 }
+@media screen and (min-width: 768px) {
+    .footer {
+      padding-top: 79px;
+      padding-bottom: 18px;
+    }
+    
+}
+@media screen and (min-width: 1280px) {
+  .footer {
+    padding-top: 82px;
+    padding-bottom: 10px;
+  }
+
+}
+
 
 .title-wrapper__suptitle {
     margin-bottom: 17px;
@@ -25,11 +41,23 @@
     line-height: 1.15;
     letter-spacing: 0.04em;
     text-transform: uppercase;
-
     color: $color-accent;
+}
+@media screen and (min-width: 768px) {
+  .title-wrapper__title {
+    margin-bottom: 0;
+  }
 
 }
-
+.contacts-wrapper {
+    margin-bottom: 43px;
+}
+@media screen and (min-width: 768px) {
+    .contacts-wrapper {
+      margin-bottom: 0;
+    }
+    
+}
 .contacts-wrapper__list {
     display: flex;
     justify-content: flex-end;
@@ -57,7 +85,6 @@
 .footer-tel {
     display: flex;
     justify-content: flex-end;
-    margin-bottom: 65px;
 }
 
 .footer-tel__text {
@@ -82,21 +109,21 @@
     }
 }
 
-@media screen and (min-width: 320px) {
-    .copyright {
-        border-top: 1px solid #e1e1e1;
-        padding: 22px 84px 25px 91px;
-    }
+.copyright {
+    border-top: 1px solid #e1e1e1;
+    padding-top: 22px;
+    padding-left: 79px;
+    padding-right: 91px;
+}
 
-    .copyright__text {
-        font-family: $main-font;
-        font-weight: 700;
-        font-size: 14px;
-        line-height: 1.5;
+.copyright__text {
+font-family: $main-font;
+font-weight: 700;
+font-size: 14px;
+line-height: 1.5;
 
-        text-align: center;
-        color: $text-color-2;
-    }
+text-align: center;
+color: $text-color-2;
 }
 
 @media screen and (min-width: 768px) {
@@ -124,12 +151,8 @@
     .footer .container {
         display: flex;
         justify-content: space-between;
-    }
-
-    .contacts-wrapper {
         margin-bottom: 91px;
     }
-
     .contacts-wrapper__icon {
         width: 34px;
         height: 34px;
@@ -147,7 +170,6 @@
         padding-left: 246px;
         padding-right: 250px;
         padding-top: 29px;
-        padding-bottom: 18px;
     }
 
     .copyright__text {
@@ -159,6 +181,10 @@
 
 @media screen and (min-width: 1280px) {
 
+    .footer .container {
+        margin-bottom: 97px;
+    }
+
     .title-wrapper__suptitle {
         width: 100%;
         font-size: 30px;
@@ -169,7 +195,6 @@
         width: 100%;
         font-size: 58px;
         line-height: 1.13;
-        margin-bottom: 106px;
     }
 
     .contacts-wrapper__list {
@@ -189,7 +214,6 @@
     .copyright {
         text-align: center;
         padding-top: 9px;
-        padding-bottom: 10px;
       }
 }
 
