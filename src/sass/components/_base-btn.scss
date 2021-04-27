@@ -26,6 +26,35 @@
   }
   
 }
+.base-btn__contacts {
+  display: flex;
+  margin: 0 auto;
+}
+@media screen and (min-width: 768px) {
+  .base-btn__contacts {
+    margin: 0;
+  }
+
+}
+.base-btn__contacts--accent {
+  background-color: $color-accent;
+  color: #fff;
+  margin-bottom: 10px;
+  transition: background-color 250ms $timing-function;
+
+  &:hover,
+  &:focus {
+    background-color: #C7133E;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .base-btn__contacts--accent {
+    margin-bottom: 0;
+    margin-right: 15px;
+  }
+
+}
 .base-btn.mobile-menu__base-btn {
   display: flex;
   margin: 0 auto;
