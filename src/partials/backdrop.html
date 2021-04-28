@@ -1,0 +1,64 @@
+<div class="backdrop is-hidden" data-modal>
+        <div class="modal is-hidden">
+            <button class="modal__button" data-modal-close>
+                <svg class="modal__icon" width="18px" height="18px">
+                    <use href="./images/sprite.svg#icon-close-black"></use>
+                </svg>
+            </button>
+            <b class="modal__title">CHECKOUT</b>
+            <form class="modal-form">
+                <div class="modal-form__field">
+                    <label class="modal-form__label" for="user-name">Name</label>
+                    <div class="modal-form__wrapper">
+                        <input class="modal-form__input" type="text" name="name" id="user-name" placeholder="Jon Smith">
+                        <svg class="modal-form__icon">
+                            <use href="./images/sprite.svg#icon-person"></use>
+                        </svg>
+                    </div>
+                </div>
+                <div class="modal-form__field">
+                    <label class="modal-form__label" for="tel">Phone number</label>
+                    <div class="modal-form__wrapper">
+                        <input class="modal-form__input" type="tel" name="tel" id="tel" placeholder="+3 0XX XXX XX XX">
+                        <svg class="modal-form__icon">
+                            <use href="./images/sprite.svg#icon-phone"></use>
+                        </svg>
+                    </div>
+                </div>
+                <div class="modal-form__field">
+                    <label class="modal-form__label" for="user-email">Email</label>
+                    <div class="modal-form__wrapper">
+                        <input class="modal-form__input" type="email" name="email" id="user-email" placeholder="example@mail.com">
+                        <svg class="modal-form__icon">
+                            <use href="./images/sprite.svg#icon-email"></use>
+                        </svg>
+                    </div>
+                </div>
+                <div class="modal-form__field">
+                    <label class="modal-form__label" for="user-name">Order number</label>
+                    <div class="modal-form__wrapper">
+                        <input class="modal-form__input" type="text" name="order-number" id="order-number" placeholder="234 765">
+                        <svg class="modal-form__icon">
+                            <use href="./images/sprite.svg#icon-person"></use>
+                        </svg>
+                    </div>
+                </div>
+                <div class="modal-form__field modal-form__field--mb">
+                    <label class="modal-form__label" for="comment">Order comment</label>
+                    <textarea class="modal-form__input modal-form__input--resize" type="text" name="comment" id="comment" placeholder="Enter text"></textarea>
+                </div>
+                <div class="modal-form__policy">
+                    <label class="policy">
+                        <input class="policy__real-checkbox" type="checkbox" name="checkbox"></input>
+                        <span class="policy__checkbox">
+                            <!-- <svg class="policy__icon">
+                                <use href="./images/sprite.svg#icon-reviews-home-pg"></use>
+                            </svg> -->
+                        </span>
+                        <span class="policy__text">I agree to the newsletter and accept <a class="policy__link" href="">PRIVACY POLICY</a></span>
+                    </label>
+                </div>
+                <button class="base-btn base-btn__contacts--accent" type="submit">SEND</button>
+            </form>
+        </div>
+    </div>
