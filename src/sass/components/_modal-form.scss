@@ -1,0 +1,128 @@
+.modal-form {
+    display: flex;
+    flex-direction: column;
+}
+.modal-form__field {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+    position: relative;
+
+    &:focus-within .modal-form__icon {
+        fill: $color-accent;
+    }
+}
+.modal-form__field--mb {
+    margin-bottom: 20px;
+}
+.modal-form__label {
+    font-size: 12px;
+    line-height: 1.16;
+    letter-spacing: 0.01em;
+    // color: #757575;
+    color: $color-accent;
+    margin-bottom: 4px;
+}
+.modal-form__wrapper {
+    position: relative;
+}
+.modal-form__input {
+    display: inline-block;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+    padding: 12px 42px;
+    width: 100%;
+    color: $color-accent;
+    transition: border-color 250ms $timing-function;
+
+    &:focus {
+        outline: 0;
+        border-color: $color-accent;
+    }
+}
+.modal-form__input--resize {
+    min-height: 120px;
+    padding: 16px 12px;
+    resize: none;
+}
+.modal-form__icon {
+    position: absolute;
+    width: 18px;
+    height: 18px;
+    top: 50%;
+    left: 15px;
+    transform: translateY(-50%);
+    transition: fill 250ms $timing-function;
+}
+.modal-form__policy {
+    position: relative;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    margin-bottom: 20px;
+}
+@media screen and (min-width: 1200px) {
+    .modal-form__policy {
+        padding-left: 13px;
+    }
+    
+}
+.policy {
+    display: inline-flex;
+    align-items: center;
+}
+.policy__real-checkbox {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+
+    &:checked + .policy__checkbox {
+        background-color: $color-accent;
+        border-color: $color-accent;
+    }
+    &:focus + .policy__checkbox {
+        border-color: $color-accent;
+    }
+}
+.policy__checkbox {
+    position: relative;
+    width: 16px;
+    height: 15px;
+    margin-right: 7px;
+    border: 2px solid #212121;
+    border-radius: 2px;
+    transition: background-color 250ms $timing-function, border-color 250ms $timing-function;
+}
+.policy__icon {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 16px;
+    height: 15px;
+}
+.policy__text {
+    font-size: 12px;
+    line-height: 1.16;
+    letter-spacing: 0.03em;
+    color: $color-accent;
+
+    .policy__link {
+        font-weight: 700;
+        color: $reviews-markers-color;
+    }
+}
+@media screen and (min-width: 1200px) {
+    .policy__text {
+        font-size: 14px;
+        line-height: 1.7; 
+    }
+}
+
+
+
