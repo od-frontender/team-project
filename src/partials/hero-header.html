@@ -1,35 +1,38 @@
 <header class="header">
   <div class="container">
-    <div class="mobile-menu" data-menu>
-      <button class="close-btn" data-menu-close>
-        <svg class="close-btn__icon">
-          <use href="./images/sprite.svg#icon-close"></use>
-        </svg>
-      </button>
-      <button class="base-btn mobile-menu__base-btn" type="button">
-        Buy now
-        <svg class="base-btn__icon">
-          <use href="./images/sprite.svg#icon-Vector1"></use>
-        </svg>
-      </button>
-      <ul class="mobile-navigation">
-        <li class="mobile-navigation__item list">
-          <a class="mobile-navigation__link link" href="">Home</a>
-        </li>
-        <li class="mobile-navigation__item list">
-          <a class="mobile-navigation__link link" href="#gallery">About us</a>
-        </li>
-        <li class="mobile-navigation__item list">
-          <a class="mobile-navigation__link link" href="#about">How it’s made?</a>
-        </li>
-        <li class="mobile-navigation__item list">
-          <a class="mobile-navigation__link link" href="#products">Our products</a>
-        </li>
-        <li class="mobile-navigation__item list">
-          <a class="mobile-navigation__link link" href="#contacts">Contact</a>
-        </li>
-      </ul>
+    <div class="backdrop is-hidden" data-modal>
+      <div class="mobile-menu" data-menu>
+        <button class="close-btn" data-menu-close data-modal-close>
+          <svg class="close-btn__icon">
+            <use href="./images/sprite.svg#icon-close"></use>
+          </svg>
+        </button>
+        <button class="base-btn mobile-menu__base-btn" type="button">
+          Buy now
+          <svg class="base-btn__icon">
+            <use href="./images/sprite.svg#icon-Vector1"></use>
+          </svg>
+        </button>
+        <ul class="mobile-navigation">
+          <li class="mobile-navigation__item list">
+            <a class="mobile-navigation__link link" href="">Home</a>
+          </li>
+          <li class="mobile-navigation__item list">
+            <a class="mobile-navigation__link link" href="#gallery">About us</a>
+          </li>
+          <li class="mobile-navigation__item list">
+            <a class="mobile-navigation__link link" href="#about">How it’s made?</a>
+          </li>
+          <li class="mobile-navigation__item list">
+            <a class="mobile-navigation__link link" href="#products">Our products</a>
+          </li>
+          <li class="mobile-navigation__item list">
+            <a class="mobile-navigation__link link" href="#contacts">Contact</a>
+          </li>
+        </ul>
+      </div>
     </div>
+
     <div class="header__wrapper">
       <a class="logo link" href="">
         <img
@@ -54,12 +57,12 @@
           <a class="navigation__link link" href="#contacts">Contact</a>
         </li>
       </ul>
-      <button class="burger-btn" type="button" data-menu-button>
+      <button class="burger-btn" type="button" data-menu-button data-modal-open>
         <svg class="burger-btn__icon">
           <use href="./images/sprite.svg#icon-Burger"></use>
         </svg>
       </button>
-      <button class="base-btn" type="button" data-modal-open>
+      <button class="base-btn" type="button">
         Buy now
         <svg class="base-btn__icon">
           <use href="./images/sprite.svg#icon-Vector1"></use>
