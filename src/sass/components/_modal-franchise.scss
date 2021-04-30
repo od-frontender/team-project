@@ -8,6 +8,7 @@
     opacity: 1;
     transition: opacity 250ms $timing-function;
     z-index: 999;
+    // overflow-y: scroll;
 }
 
 .modal-franchise {
@@ -15,8 +16,8 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 40vw;
-    height: 40vh;
+    width: 30vw;
+    height: 50vh;
     padding: 40px 20px 20px;
     background: $main-bg-color;
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
