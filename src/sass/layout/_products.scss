@@ -240,8 +240,13 @@
   }
 }
 
+// .products__link {
+//   position: relative;
+// }
+
 .products__description {
-  margin-bottom: 30px;
+  // margin-bottom: 30px;
+  padding-bottom: 30px;
   font-weight: 700;
   font-size: 14px;
   line-height: 1.52;
@@ -264,12 +269,92 @@
 
   @media screen and (min-width: 768px) {
     margin-bottom: 40px;
+    // padding-bottom: 40px;
 
     line-height: 1.76;
   }
 
   @media screen and (min-width: 1280px) {
-    margin-bottom: 62px;
+    margin-bottom: 60px;
+    // padding-bottom: 60px;
+
+    font-size: 16px;
+  }
+}
+
+.products__overlay_ice-cream {
+  background-color: $main-bg-color;
+
+  &::-webkit-scrollbar {
+    background-color: $main-bg-color;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background-color: #ffa5ba;
+  }
+}
+.products__overlay_ice-coffee {
+  background-color: $third-bg-color;
+
+  &::-webkit-scrollbar {
+    background-color: $third-bg-color;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background-color: #ecc488;
+  }
+}
+
+.products__overlay_milkshakes {
+  background-color: $fourth-bg-color;
+
+  &::-webkit-scrollbar {
+    background-color: $fourth-bg-color;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background-color: #b1db79;
+  }
+}
+
+.products__overlay {
+  position: absolute;
+  bottom: 110px;
+  left: 0;
+  height: 25%;
+  padding: 0 20px;
+  overflow: auto;
+  border-radius: 24px;
+
+  font-size: 14px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  text-align: center;
+  color: $color-accent;
+
+  opacity: 0;
+  transition: opacity 250ms $timing-function;
+
+  .products__link:hover &,
+  .products__link:focus & {
+    opacity: 1;
+  }
+
+  &::-webkit-scrollbar {
+    width: 6px;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+  }
+
+  @media screen and (min-width: 768px) {
+    height: 32%;
+  }
+
+  @media screen and (min-width: 1280px) {
+    bottom: 120px;
+    padding: 0 30px;
 
     font-size: 16px;
   }
@@ -280,6 +365,10 @@
   width: 40px;
   height: 40px;
   margin: 0 auto;
+
+  position: relative;
+  z-index: 10;
+
   border: none;
   border-radius: 50%;
 
@@ -301,4 +390,12 @@
   height: 14px;
   margin: auto;
   fill: $color-accent;
+
+  transform: rotate(-90deg);
+  transition: transform 250ms $timing-function;
+
+  .products__link:hover &,
+  .products__link:focus & {
+    transform: rotate(90deg);
+  }
 }
