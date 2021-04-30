@@ -14,17 +14,16 @@
   padding-bottom: 11px;
   padding-top: 11px;
   transition: background-color 250ms $timing-function;
- 
+
   &:hover,
   &:focus {
-    background-color: #E5E5E5;
+    background-color: #e5e5e5;
   }
 }
 @media screen and (max-width: 767px) {
   .base-btn {
     display: none;
   }
-  
 }
 .base-btn__contacts {
   display: flex;
@@ -34,7 +33,6 @@
   .base-btn__contacts {
     margin: 0;
   }
-
 }
 .base-btn__contacts--accent {
   background-color: $color-accent;
@@ -44,7 +42,7 @@
 
   &:hover,
   &:focus {
-    background-color: #C7133E;
+    background-color: #c7133e;
   }
 }
 
@@ -53,7 +51,6 @@
     margin-bottom: 0;
     margin-right: 15px;
   }
-
 }
 .base-btn.mobile-menu__base-btn {
   display: flex;
@@ -65,10 +62,13 @@
   .base-btn.mobile-menu__base-btn {
     min-width: 186px;
   }
-
 }
 .base-btn__icon {
-    margin-left: 12px;
-    width: 7px;
-    height: 10px;
+  margin-left: 12px;
+  width: 7px;
+  height: 10px;
+
+  &_light {
+    fill: $reviews-icon2-color;
+  }
 }
