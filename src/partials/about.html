@@ -39,7 +39,7 @@
             <p class="about__discription">Aliquam erat volutpat. Aenean accumsan.</p>
           </li>
         </ul>
-        <button class="about__btn" type="button">
+        <button class="about__btn" type="button" data-modal-open-about>
           Read more
           <svg class="base-btn__icon">
             <use href="./images/sprite.svg#icon-Vector1"></use>
@@ -48,4 +48,47 @@
       </div>
     </div>
   </div>
+
+  <div class="backdrop is-hidden" data-modal-about>
+    <div class="about__menu">
+      <h2 class="title about__menu-title">how it’s made?</h2>
+      <p class="about__menu-content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem optio laboriosam dolorum neque id dolores? Doloremque eos neque quo! Magni accusamus dolorum earum aut cum. Expedita veniam dolorem qui voluptatem?</p>
+      <button class="close-btn" data-modal-close-about>
+        <svg class="close-btn__icon">
+          <use href="./images/sprite.svg#icon-close-black"></use>
+        </svg>
+      </button>
+      
+        <div class="about__img">
+          <picture ></picture>
+      <img class="about__img-bg" src="./images/desktop/bg-menu-about.png " alt="" />
+      </picture>
+        </div>
+      
+    </div>
+  </div>
 </section>
+
+
+<div class="backdrop is-hidden" data-modal-about>
+      <div class="about__modal">
+        <button class="close-btn" data-modal-close-about>
+          <svg class="close-btn__icon">
+            <use href="./images/sprite.svg#icon-close"></use>
+          </svg>
+        </button>
+        <div class="modal_bg_content">
+          <h2 class="title">how it’s made?</h2>
+          <picture>
+            
+            <img class="about__img" src="./images/desktop/bg-menu-about.png " alt="" />
+          </picture>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit
+            tempore, sunt atque debitis asperiores perspiciatis voluptatibus,
+            placeat facilis, expedita fugiat quibusdam sint laudantium nihil
+            dolorum autem exercitationem iste amet? Dolor.
+          </p>
+        </div>
+      </div>
+    </div>
