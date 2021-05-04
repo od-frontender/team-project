@@ -1,0 +1,64 @@
+.button-up {
+  position: fixed;
+  right: 10px;
+  bottom: 50px;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: $color-accent;
+  display: none;
+
+  &:hover,
+  &:focus {
+    background-color: $reviews-markers-color;
+  }
+}
+@media screen and (min-width: 768px) {
+    .button-up {
+        width: 50px;
+        height: 50px;
+    }
+    
+    
+}
+
+.button-up::before,
+.button-up::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.button-up::before {
+  width: 4px;
+  height: 12px;
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+  background-color: #fff;
+}
+@media screen and (min-width: 768px) {
+  .button-up::before {
+    width: 5px;
+    height: 21px;
+  }
+
+}
+
+.button-up::after {
+  width: 10px;
+  height: 10px;
+  transform: translate(-50%, -50%) rotate(45deg);
+  border-top: 4px solid #fff;
+  border-left: 4px solid #fff;
+}
+@media screen and (min-width: 768px) {
+   .button-up::after {
+     width: 17px;
+     height: 17px;
+     border-top: 5px solid #fff;
+     border-left: 5px solid #fff;
+   }
+    
+}
