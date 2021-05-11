@@ -1,169 +1,169 @@
 .advantages {
-    background-color: $second-bg-color;
-    padding-top: 20px;
-    padding-bottom: 97px;
+  background-color: $second-bg-color;
+  padding-top: 20px;
+  padding-bottom: 97px;
 }
 
 .advantages__item {
-    max-width: 230px;
-    height: 156px;
+  max-width: 230px;
+  height: 156px;
 
-    &:not(:first-child) {
-        margin-top: 38px;
-    }
+  &:not(:first-child) {
+    margin-top: 38px;
+  }
 }
 
 .advantages__item--icon1::before {
-    content: "";
-    display: block;
-    background-repeat: no-repeat;
-    background-image: url("../images/desktop/icon1.png");
-    height: 50px;
-    width: 100%;
-    background-size: 33px 50px;
-    margin-bottom: 15px;
+  content: '';
+  display: block;
+  background-repeat: no-repeat;
+  background-image: url('../images/desktop/icon1.png');
+  height: 50px;
+  width: 100%;
+  background-size: 33px 50px;
+  margin-bottom: 15px;
 
-    @media (min-device-pixel-ratio: 2),
+  @media (min-device-pixel-ratio: 2),
     (-webkit-min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
-        & {
-            background-image: url("../images/desktop/icon1@2x.png");
-        }
+    & {
+      background-image: url('../images/desktop/icon1@2x.png');
     }
+  }
 }
 
 .advantages__item--icon2::before {
-    content: "";
-    display: block;
-    background-repeat: no-repeat;
-    background-image: url("../images/desktop/icon2.png");
-    height: 50px;
-    width: 100%;
-    background-size: 50px 50px;
-    margin-bottom: 15px;
+  content: '';
+  display: block;
+  background-repeat: no-repeat;
+  background-image: url('../images/desktop/icon2.png');
+  height: 50px;
+  width: 100%;
+  background-size: 50px 50px;
+  margin-bottom: 15px;
 
-    @media (min-device-pixel-ratio: 2),
+  @media (min-device-pixel-ratio: 2),
     (-webkit-min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
-        & {
-            background-image: url("../images/desktop/icon2@2x.png");
-        }
+    & {
+      background-image: url('../images/desktop/icon2@2x.png');
     }
+  }
 }
 
 .advantages__item--icon3::before {
-    content: "";
-    display: block;
-    background-repeat: no-repeat;
-    background-image: url("../images/desktop/icon3.png");
-    height: 50px;
-    width: 100%;
-    background-size: 44px 50px;
-    margin-bottom: 15px;
+  content: '';
+  display: block;
+  background-repeat: no-repeat;
+  background-image: url('../images/desktop/icon3.png');
+  height: 50px;
+  width: 100%;
+  background-size: 44px 50px;
+  margin-bottom: 15px;
 
-    @media (min-device-pixel-ratio: 2),
+  @media (min-device-pixel-ratio: 2),
     (-webkit-min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
-        & {
-            background-image: url("../images/desktop/icon3@2x.png");
-        }
+    & {
+      background-image: url('../images/desktop/icon3@2x.png');
     }
+  }
 }
 
 .advantages__text {
-    font-family: $main-font;
-    font-weight: 700;
-    font-size: 12px;
-    line-height: 1.7;
-    color: $text-color-3;
+  font-family: $main-font;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 1.7;
+  color: $text-color-3;
 }
 
-.value, .value-kg {
-    font-family: $second-font;
-    font-weight: 400;
-    font-size: 36px;
-    line-height: 1.13;
-    letter-spacing: 0.04em;
-    text-transform: uppercase;
-    color: $color-accent;
+.value,
+.value-kg {
+  font-family: $second-font;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 1.13;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: $color-accent;
+  opacity: 0;
 }
 
+@media screen and (min-width: 768px) {
+  .advantages {
+    padding-bottom: 140px;
+  }
 
+  .advantages__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
 
-@media screen and (min-width: 768px){
-    .advantages {
-        padding-bottom: 140px;
+  .advantages__item {
+    margin-top: 0;
+    max-width: 180px;
+    height: 226px;
+
+    &:not(:first-child) {
+      margin-top: 0;
     }
+  }
 
-    .advantages__list {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-between;
-    }
+  .advantages__item--icon1::before {
+    margin-bottom: 36px;
+  }
 
-    .advantages__item {
-        margin-top: 0;
-        max-width: 180px;
-        height: 226px;
+  .advantages__item--icon2::before {
+    margin-bottom: 36px;
+  }
 
-        &:not(:first-child) {
-            margin-top: 0;
-        }
-    }
+  .advantages__item--icon3::before {
+    margin-bottom: 36px;
+  }
 
-    .advantages__item--icon1::before {
-        margin-bottom: 36px;
-    }
+  .advantages__text {
+    font-size: 14px;
+    line-height: 1.74;
+  }
 
-    .advantages__item--icon2::before {
-       margin-bottom: 36px; 
-    }
-
-    .advantages__item--icon3::before {
-        margin-bottom: 36px;
-    }
-
-    .advantages__text {
-        font-size: 14px;
-        line-height: 1.74;
-    }
-
-    .value, .value-kg {
-        font-size: 48px;
-        line-height: 1.15;
-    }
+  .value,
+  .value-kg {
+    font-size: 48px;
+    line-height: 1.15;
+  }
 }
 
+@media screen and (min-width: 1280px) {
+  .advantages__item {
+    max-width: 330px;
+    height: 222px;
+  }
 
-@media screen and (min-width: 1280px){
+  .advantages__item--icon1::before {
+    margin-bottom: 40px;
+  }
 
-    .advantages__item {
-        max-width: 330px;
-        height: 222px;
-    }
+  .advantages__item--icon2::before {
+    margin-bottom: 40px;
+  }
 
-    .advantages__item--icon1::before {
-        margin-bottom: 40px;
-    }
+  .advantages__item--icon3::before {
+    margin-bottom: 40px;
+  }
 
-    .advantages__item--icon2::before {
-       margin-bottom: 40px; 
-    }
+  .advantages__text {
+    font-size: 16px;
+    line-height: 1.76;
+  }
 
-    .advantages__item--icon3::before {
-        margin-bottom: 40px;
-    }
-
-    .advantages__text{
-        font-size: 16px;
-        line-height: 1.76;
-    }
-
-    .value, .value-kg {
-        font-size: 58px;
-        line-height: 1.14;
-    }
+  .value,
+  .value-kg {
+    font-size: 58px;
+    line-height: 1.14;
+  }
 }
